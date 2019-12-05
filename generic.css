@@ -1,0 +1,67 @@
+html, body{ 
+    margin: 0; padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dde;
+}
+#navbar{
+    background-color: #334;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 8px 10px -1px rgba(0,0,0,0.10);
+    z-index: 3;
+    margin-bottom: 1.5rem;
+}
+nav{
+    margin: auto 2rem;
+    order: 2;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+.active{
+    color: aquamarine !important;
+}
+nav a{
+    text-decoration: none;
+    color: #bcbcbc;
+}
+nav a:hover{
+    color: #d186e6;
+}
+#oop{
+    color: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1.3em; 
+}
+#title, #right{
+    font-family: "Comic Sans MS", sans-serif; 
+    margin: auto 0;
+    order: 2;
+    font-size: 1.5rem;
+    background-color: #223;
+    padding: 2rem;
+    z-index: 3;
+    box-shadow: 4px -2px 12px -1px rgba(0,0,0,0.2);
+}
+#right {
+    opacity: 0;
+}
+#home{
+    color: #edaeff;
+    text-decoration: none;
+}
+#app{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.sketch-wrapper-wrapper{
+    margin: auto;
+}
+.sketch-wrapper{
+    margin: auto;
+}
+#sketch{
+    padding: 2rem;
+    background-color: black;
+}

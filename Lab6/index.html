@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab0</title>
+    <link rel="stylesheet" href="../generic.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.js"></script>
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <div id="app">
+        <iframe src="../nav.html" frameborder="0"></iframe>
+
+        <div class="wrapper--wrapper">
+            <div class="wrapper">
+                <div id="sketch"></div>
+                <div id="writeUp">
+                    <div class="name">Instructions</div>
+                    <div class="class">
+                        <div style="padding: 1rem; font-size: 1.3em;">
+                            Click the guitar neck to make noises! "A-G" to play chords, spacebar to toggle major/minor.
+                        </div>
+                    </div>
+                    <div class="name">Chord</div>
+                    <div class="class">
+                        <div class="head">Attributes</div>
+                        <div class="body">
+                            <div class="left">chord: float[]</div>
+                            <div>Holds the frequencies for each string</div>
+                        </div>
+                        <div class="head">Constructor</div>
+                        <div class="body">
+                            <div class="left">constructor(e, a, d, g, b, hie)</div>
+                            <div>Pushes all params into an array, taken as fret held down</div>
+                        </div>
+                        <div class="head">Methods</div>
+                        <div class="body">
+                            <div class="left">playChord()</div>
+                            <div>Sets frequency for each string and plays them</div>
+                        </div>
+                    </div>
+        
+                    <div class="name">GuitarString</div>
+                    <div class="class">
+                        <div class="head">Attributes</div>
+                        <div class="body">
+                            <div class="left">baseFreq: float</div>
+                            <div>Base frequency of the string</div>
+                            <div class="left">x: float</div>
+                            <div>Location of the string</div>
+                            <div class="left">playing: bool</div>
+                            <div>Whether or not the string is emitting sound</div>
+                            <div class="left">osc: Oscillator</div>
+                            <div>Processing Oscillator to produce sound</div>
+                            <div class="left">distReq: float</div>
+                            <div>Distance requirement to be active</div>
+                            <div class="left">playingChord: bool</div>
+                            <div>Whether or not there is a chord being played</div>
+                            <div class="left">chordFret: int</div>
+                            <div>Integer of the fret passed by the chord</div>
+                        </div>
+                        <div class="head">Constructor</div>
+                        <div class="body">
+                            <div class="left">constructor(baseFreq, x)</div>
+                            <div>Sets attributes to params, initializes else to defaults</div>
+                        </div>
+                        <div class="head">Methods</div>
+                        <div class="body">
+                            <div class="left">freq()</div>
+                            <div>Trivial getter for freqAtFret()</div>
+                            <div class="left">freqAtFret()</div>
+                            <div>Determines string's current frequency</div>
+                            <div class="left">play()</div>
+                            <div>Plays the current frequency</div>
+                            <div class="left">display()</div>
+                            <div>Displays the string at its position. Current string is highlighted</div>
+                        </div>
+                    </div>
+        
+                    <div class="name">GuitarNeck</div>
+                    <div class="class">
+                        <div class="head">Attributes</div>
+                        <div class="body">
+                            <div class="left">numFrets: int</div>
+                            <div>Number of frets on the neck</div>
+                            <div class="left">scaleLength: float</div>
+                            <div>Length of the neck</div>
+                        </div>
+                        <div class="head">Constructor</div>
+                        <div class="body">
+                            <div class="left">constructor(e, a, d, g, b, hie)</div>
+                            <div>Pushes all params into an array, taken as fret held down</div>
+                        </div>
+                        <div class="head">Methods</div>
+                        <div class="body">
+                            <div class="left">playChord()</div>
+                            <div>Sets frequency for each string and plays them</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

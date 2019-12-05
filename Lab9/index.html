@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab9</title>
+    <link rel="stylesheet" href="../generic.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+    <script src="sketch.js"></script>
+    <script src="Catcher.js"></script>
+    <script src="Drop.js"></script>
+    <script src="Timer.js"></script>
+    <script src="../onload.js"></script>
+</head>
+<body>
+    <div id="app">
+        <iframe src="../nav.html" frameborder="0"></iframe>
+            <div class="sketch-wrapper-wrapper">
+                <div class="sketch-wrapper">
+                    <div id="sketch"></div>
+                    <div id="instructions">Don't get hit!</div>
+                </div>
+            </div>
+        </div>
+</body>
+<style>
+    #navbar{
+        margin-bottom: 5rem;
+    }
+    #sketch{
+        cursor: none;
+    }
+#instructions{
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    color:  #888;
+}
+</style>
+</html>

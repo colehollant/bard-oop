@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab0</title>
+    <link rel="stylesheet" href="../generic.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+    <script src="sketch.js"></script>
+    <script src="../onload.js"></script>
+</head>
+<body>
+        <div id="app">
+            <iframe src="../nav.html" frameborder="0"></iframe>
+            <div class="sketch-wrapper-wrapper">
+                <div class="sketch-wrapper">
+                    <div id="sketch"></div>
+                    <div id="instructions">
+                        <h2 style="padding: 0 1rem 0.5rem;text-align: left; font-size: 1.5em; font-weight: bolder; margin-bottom: .5em;">Instructions</h2>
+                        <div id="seed" style="padding: 0 1rem 0.5rem; font-size: 1.3em;text-align: left;font-weight: bold;color: rgb(92, 92, 92);"></div>
+                        <div>
+                            <div style="padding: 1rem; font-size: 1.3em;">
+                                'B' to brighten <br>
+                                'D' to dim <br>
+                                'W' to swap rgb <br>
+                                'G' to put in grayscale <br>
+                                'T' to put in black and white <br>
+                                'S' to apply a sepia filter <br>
+                                'F' to apply an Obama filter <br>
+                                'Y' to apply a noise filter <br>
+                                'U' to reseed noise <br>
+                                'C' to reset <br>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+    #navbar{
+        margin-bottom: 5rem;
+    }
+    .sketch-wrapper-wrapper{
+        margin: unset;
+    }
+    .sketch-wrapper{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        max-width: 1200px;
+    }
+    #instructions{
+        margin: auto 0;
+        font-size: 1.3em;
+    }
+    #instructions h3{
+        font-size: 1.2em;
+    }
+    #instructions h4{
+        margin: .5rem 0;
+        color: #222;
+    }
+    #instructions p{
+        margin: 0 0 1.5rem;
+        color: #333;
+    }
+    </style>
+</html>

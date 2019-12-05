@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab1</title>
+    <link rel="stylesheet" href="../generic.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+    <script src="sketch.js"></script>
+    <script src="../onload.js"></script>
+</head>
+<body>
+    <div id="app">
+        <iframe src="../nav.html" frameborder="0"></iframe>
+        <div class="sketch-wrapper-wrapper">
+            <div class="sketch-wrapper">
+                <div id="sketch"></div>
+                <div id="instructions">
+                    <h3>Press 1&ndash;3 to switch modes</h3>
+                    <h4>Mode 1</h4>
+                    <p>Press SPACE to reset</p>
+                    <h4>Mode 2</h4>
+                    <p>No controls</p>
+                    <h4>Mode 3</h4>
+                    <p>Yellow circle follows mouse</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+#navbar{
+    margin-bottom: 5rem;
+}
+.sketch-wrapper-wrapper{
+    margin: unset;
+}
+.sketch-wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 1200px;
+}
+#instructions{
+    margin: auto 0;
+    font-size: 1.3em;
+}
+#instructions h3{
+    font-size: 1.2em;
+}
+#instructions h4{
+    margin: .5rem 0;
+    color: #222;
+}
+#instructions p{
+    margin: 0 0 1.5rem;
+    color: #333;
+}
+</style>
+</html>
